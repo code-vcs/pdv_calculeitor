@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdv</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sisvcs</h1>
+    </header>
+    <datalist id="produtos">
+        <option value="Ração"></option>
+        <option value="Vacina"></option>
+        <option value="Acessorios"></option>
+        <option value="Medicamentos"></option>
+        <option value="Exame"></option>
+        <option value="Cirurgias"></option>
+    
+    </datalist>
+
+    <fieldset id="area-pdv">
+            <p>Produto:</p>
+            <label for="produto">
+                <input type="search" id="produto" name="produto" list="produtos" placeholder="Nome do produto">
+          
+            </label>
+            <p>Quantidade:</p>
+            <label for="quantidade-produto">
+                <input type="number" id="quantidade-produto" name="quantidade-produto" placeholder="Quantidade ">
+            </label>
+            <p>Preco unitario:</p>
+            <label for="valor-produto">
+                <input type="search" id="valor-produto" name="valor-produto" placeholder="Valor do produto">
+            </label>
+            <!--Campo desconto do form-->
+            <p>Desconto:</p>
+            <label for="desconto-produto">
+                <input type="number" id="desconto-sobre-produto" name="desconto-sobre-produto"
+                    placeholder="Valor Desconto" disabled>
+            </label>
+            <p>Percentual</p>
+            <input type="serach" title="Percentual" id="desconto-percentual" name="desconto-percentual"
+                placeholder="Percentual %" disabled>
+
+            <input type="button" id="total" name="total" value="0.00">
+            <button id="btComprar" onclick="botaoComprar()">Registrar compra</button>
+
+
+    </fieldset>
+  
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
